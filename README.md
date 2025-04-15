@@ -77,4 +77,4 @@ Fill in the following fields accordingly:
 
 ---
 
-### Note: Render's free tier services automatically spin down after 15 minutes of inactivity. If the service has been idle, it may take 3 to 4 minutes to restart when you make a request. Please be patient while the server resumes operation.Note: The Render free service will spin down after 15 minutes of inactivity, please wait for 3 to 4 minutes after hitting the api to let the server start its service again
+Note: Render's free tier services automatically spin down after 15 minutes of inactivity. If the service has been idle, it may take 3 to 4 minutes to restart when you make a request. Please be patient while the server resumes operation.
