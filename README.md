@@ -14,7 +14,9 @@ A RESTful API for managing tasks and users, built with **Node.js**, **Express**,
 
 ### Create a .env file
 Create a .env file in the root directory and add:
+
 ```DATABASE_URL=mongodb+srv://<username>:<password>@<cluster>/<collection>?retryWrites=true&w=majority```
+
 ```JWT_SECRET=your_jwt_secret```
 
 ### Start the Development Server
