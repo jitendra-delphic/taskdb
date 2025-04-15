@@ -22,7 +22,7 @@ Create a .env file in the root directory and add:
 
 Server will run on http://localhost:4000
 
-Here's a properly formatted and professional document based on your points, titled **"Deploying a Web Service on Render"**:
+Current Service URL: The application is live and running at https://task-manager-backend-vt6n.onrender.com/
 
 ---
 
