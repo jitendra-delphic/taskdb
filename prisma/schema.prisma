@@ -26,7 +26,7 @@ model Task {
   title       String
   description String?
   status      String   @default("not_started")
-  dueDate     String
+  dueDate     DateTime
   priority    String   @default("medium")
   userId      String   @db.ObjectId
   user        User     @relation(fields: [userId], references: [id])
