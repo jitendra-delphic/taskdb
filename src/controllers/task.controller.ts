@@ -2,8 +2,8 @@ import { Request, Response } from 'express';
 import prisma from '../prisma/client';
 
 export const createTask = async (req: Request, res: Response) => {
-  const { title, description, dueDate, priority } = req.body;
-  const userId = (req as any).userId;
+  const { title, description, dueDate, priority, userId } = req.body;
+  // const userId = (req as any).userId;
 
   const task = await prisma.task.create({
     data: { title, description, dueDate, priority, userId }
@@ -13,8 +13,9 @@ export const createTask = async (req: Request, res: Response) => {
 };
 
 export const getTasks = async (req: Request, res: Response) => {
-    const userId = (req as any).userId;
+    // const userId = (req as any).userId;
     const {
+      userId,
       status,
       priority,
       sortBy = 'dueDate',
@@ -77,7 +78,8 @@ export const updateTask = async (req: Request, res: Response) => {
   
 
 export const getStats = async (req: Request, res: Response) => {
-    const userId = (req as any).userId;
+    // const userId = (req as any).userId;
+    const {userId} = req.query as any;
   
     const [total, completed, byPriority, overdue] = await Promise.all([
       prisma.task.count({ where: { userId } }),
