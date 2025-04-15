@@ -43,13 +43,13 @@ export const updateTask = async (req: Request, res: Response) => {
       const { id } = req.params;
       const userId = (req as any).userId;
   
-      const task = await prisma.task.findUnique({ where: { id: Number(id) } });
+      const task = await prisma.task.findUnique({ where: { id: String(id) } });
       if (!task || task.userId !== userId) {
         return res.status(404).json({ error: 'Task not found' });
       }
   
       const updated = await prisma.task.update({
-        where: { id: Number(id) },
+        where: { id: String(id) },
         data: req.body
       });
   
@@ -65,12 +65,12 @@ export const updateTask = async (req: Request, res: Response) => {
     const { id } = req.params;
     const userId = (req as any).userId;
   
-    const task = await prisma.task.findUnique({ where: { id: Number(id) } });
+    const task = await prisma.task.findUnique({ where: { id: String(id) } });
     if (!task || task.userId !== userId) {
       return res.status(404).json({ error: 'Task not found' });
     }
   
-    await prisma.task.delete({ where: { id: Number(id) } });
+    await prisma.task.delete({ where: { id: String(id) } });
   
     return res.json({ message: 'Task deleted' }); 
   };

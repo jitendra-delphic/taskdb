@@ -9,12 +9,12 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "mongodb"
+  url      = env("DATABASE_URL")  // Make sure it's using the correct env var
 }
 
 model User {
-  id       Int     @id @default(autoincrement())
+  id       String  @id @default(auto()) @map("_id") @db.ObjectId
   name     String
   email    String  @unique
   password String
@@ -22,14 +22,13 @@ model User {
 }
 
 model Task {
-  id          Int      @id @default(autoincrement())
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
   title       String
   description String?
   status      String   @default("not_started")
   dueDate     DateTime?
   priority    String   @default("medium")
-  userId      Int
+  userId      String   @db.ObjectId
   user        User     @relation(fields: [userId], references: [id])
   createdAt   DateTime @default(now())
 }
-
