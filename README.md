@@ -24,6 +24,8 @@ Server will run on http://localhost:4000
 
 Current Service URL: The application is live and running at https://task-manager-backend-vt6n.onrender.com/
 
+Note: Render's free tier services automatically spin down after 15 minutes of inactivity. If the service has been idle, it may take 3 to 4 minutes to restart when you make a request. Please be patient while the server resumes operation.
+
 ---
 
 # Deploying a Web Service on Render
@@ -76,5 +78,3 @@ Fill in the following fields accordingly:
 - Render will begin building and deploying your app. Once complete, your service will be live at the generated Render URL.
 
 ---
-
-Note: Render's free tier services automatically spin down after 15 minutes of inactivity. If the service has been idle, it may take 3 to 4 minutes to restart when you make a request. Please be patient while the server resumes operation.
