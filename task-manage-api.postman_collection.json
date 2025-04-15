@@ -1,0 +1,819 @@
+{
+	"info": {
+		"_postman_id": "752ba640-88bf-439c-831f-931226c98ebb",
+		"name": "task-manage-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44111024",
+		"_collection_link": "https://jitendra-delphic-2246610.postman.co/workspace/My-Workspace~50ee824c-132f-4e4e-8dff-ef129f1e4922/collection/43827613-752ba640-88bf-439c-831f-931226c98ebb?action=share&source=collection_link&creator=44111024"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"User's Name\",\n  \"email\": \"user@gmail.com\",\n  \"password\": \"user@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://task-manager-backend-vt6n.onrender.com/api/users/register",
+					"protocol": "https",
+					"host": [
+						"task-manager-backend-vt6n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"User's Name\",\n  \"email\": \"user1@gmail.com\",\n  \"password\": \"user@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://task-manager-backend-vt6n.onrender.com/api/users/register",
+							"protocol": "https",
+							"host": [
+								"task-manager-backend-vt6n",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 15 Apr 2025 11:59:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "166"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"bc-BboVKr/ZTBuaFoJDtulhKGkHcl0\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "8dc52b26-ffbd-4944"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "930b46651895c5a9-IAD"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2ZlNGEwYjVmYWE1NDQwZDI0ZDBjNzAiLCJpYXQiOjE3NDQ3MTgzNDgsImV4cCI6MTc0NDcyMTk0OH0.m8P7yZO35Zm_UOQMx1zC6LBTMya1QM0eSnOm1bfsSAU\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"user@gmail.com\",\n  \"password\": \"user@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://task-manager-backend-vt6n.onrender.com/api/users/login",
+					"protocol": "https",
+					"host": [
+						"task-manager-backend-vt6n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"user@gmail.com\",\n  \"password\": \"user@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://task-manager-backend-vt6n.onrender.com/api/users/login",
+							"protocol": "https",
+							"host": [
+								"task-manager-backend-vt6n",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 15 Apr 2025 11:59:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "163"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"bc-w+qrltXxrmkPk76nXpaDSZ01xuo\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "bff9881f-2248-425f"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "930b4691df99207c-IAD"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2ZlMzA0ZDM4Mjg4M2ZhNjQ3YWJmYjciLCJpYXQiOjE3NDQ3MTgzNTQsImV4cCI6MTc0NDcyMTk1NH0.8QkegNdqVfQg5YAZGzpMub0mP0Sz9YmCGL7aVv8Jk8A\"\n}"
+				}
+			]
+		},
+		{
+			"name": "reset-password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"user@gmail.com\",\n  \"newPassword\": \"user@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://task-manager-backend-vt6n.onrender.com/api/users/reset-password",
+					"protocol": "https",
+					"host": [
+						"task-manager-backend-vt6n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"reset-password"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "reset-password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"user@gmail.com\",\n  \"newPassword\": \"user@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://task-manager-backend-vt6n.onrender.com/api/users/reset-password",
+							"protocol": "https",
+							"host": [
+								"task-manager-backend-vt6n",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"reset-password"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 15 Apr 2025 11:59:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"27-L4xvc+jp/avJkeCZKkXIaqi7KoM\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "ee32d037-6bf4-4099"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "930b46b39e4205ca-IAD"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Password reset successful\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create-task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2ZlMzA0ZDM4Mjg4M2ZhNjQ3YWJmYjciLCJpYXQiOjE3NDQ3MTc5OTEsImV4cCI6MTc0NDcyMTU5MX0.i5j8FxnOCkMuI53TZjOsLqHIDLe_Pp6ERJ_I27Ca6uo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": \"67fe304d382883fa647abfb7\",\n  \"title\": \"New deploy of service\",\n  \"description\": \"desribe accoerdingly\",\n  \"dueDate\": \"2025-04-30T10:00:00Z\",\n  \"priority\": \"high\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://task-manager-backend-vt6n.onrender.com/api/tasks/",
+					"protocol": "https",
+					"host": [
+						"task-manager-backend-vt6n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create-task",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": \"67fe304d382883fa647abfb7\",\n  \"title\": \"New deploy of service\",\n  \"description\": \"desribe accoerdingly\",\n  \"dueDate\": \"2025-04-30T10:00:00Z\",\n  \"priority\": \"high\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://task-manager-backend-vt6n.onrender.com/api/tasks/",
+							"protocol": "https",
+							"host": [
+								"task-manager-backend-vt6n",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"tasks",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 15 Apr 2025 11:58:44 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "194"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"ff-J7JSIVh1hHVDsFygvhmZaJjElpk\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "22024dba-724c-41be"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "930b45d70cc3c5a9-IAD"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"67fe49f45faa5440d24d0c6f\",\n    \"title\": \"New deploy of service\",\n    \"description\": \"desribe accoerdingly\",\n    \"status\": \"not_started\",\n    \"dueDate\": \"2025-04-30T10:00:00.000Z\",\n    \"priority\": \"high\",\n    \"userId\": \"67fe304d382883fa647abfb7\",\n    \"createdAt\": \"2025-04-15T11:58:44.365Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get-task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2ZlMzA0ZDM4Mjg4M2ZhNjQ3YWJmYjciLCJpYXQiOjE3NDQ3MTM5MTMsImV4cCI6MTc0NDcxNzUxM30.VocT0CDw-wDV6pU2kIxQ21uA6teTlx1C5eRnT_UtjPo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://task-manager-backend-vt6n.onrender.com/api/tasks?userId=67fe29ba178ad5e19e1ba55e&status=not_started&priority=high",
+					"protocol": "https",
+					"host": [
+						"task-manager-backend-vt6n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "67fe29ba178ad5e19e1ba55e"
+						},
+						{
+							"key": "status",
+							"value": "not_started"
+						},
+						{
+							"key": "priority",
+							"value": "high"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get-task",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://task-manager-backend-vt6n.onrender.com/api/tasks?userId=67fe29ba178ad5e19e1ba55e&status=not_started&priority=high",
+							"protocol": "https",
+							"host": [
+								"task-manager-backend-vt6n",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "67fe29ba178ad5e19e1ba55e"
+								},
+								{
+									"key": "status",
+									"value": "not_started"
+								},
+								{
+									"key": "priority",
+									"value": "high"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 15 Apr 2025 11:58:30 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "175"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"ee-SHrsbHTUNc28KOXlLvo/QzaocqE\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "bc811b87-c39e-491e"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "930b4581cde53ade-IAD"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"67fe33fd08d1cd638341244a\",\n        \"title\": \"some titile\",\n        \"description\": \"jdjfksdkjfn\",\n        \"status\": \"not_started\",\n        \"dueDate\": \"2025-04-30T10:00:00.000Z\",\n        \"priority\": \"high\",\n        \"userId\": \"67fe29ba178ad5e19e1ba55e\",\n        \"createdAt\": \"2025-04-15T10:25:00.397Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "get-task-summary",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2ZlMzA0ZDM4Mjg4M2ZhNjQ3YWJmYjciLCJpYXQiOjE3NDQ3MTc5OTEsImV4cCI6MTc0NDcyMTU5MX0.i5j8FxnOCkMuI53TZjOsLqHIDLe_Pp6ERJ_I27Ca6uo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://task-manager-backend-vt6n.onrender.com/api/tasks/stats/summary?userId=67fe304d382883fa647abfb7",
+					"protocol": "https",
+					"host": [
+						"task-manager-backend-vt6n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"stats",
+						"summary"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "67fe304d382883fa647abfb7"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get-task-summary",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://task-manager-backend-vt6n.onrender.com/api/tasks/stats/summary?userId=67fe304d382883fa647abfb7",
+							"protocol": "https",
+							"host": [
+								"task-manager-backend-vt6n",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"stats",
+								"summary"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "67fe304d382883fa647abfb7"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 15 Apr 2025 11:56:43 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "86"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"6c-nAbYJpycrQy3ZYSJyV+Wz3EzrGk\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "5f7f38ef-dab4-4c3b"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "930b42de6ac3e5c3-IAD"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total\": 1,\n    \"completed\": 0,\n    \"pending\": 1,\n    \"byPriority\": [\n        {\n            \"_count\": {\n                \"priority\": 1\n            },\n            \"priority\": \"high\"\n        }\n    ],\n    \"overdue\": 0\n}"
+				}
+			]
+		}
+	]
+}
